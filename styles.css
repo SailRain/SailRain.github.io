@@ -95,7 +95,7 @@ main {
 
 .profile-copy,
 .profile-meta,
-.home-lists > *,
+.cv-summary > *,
 .content-section,
 .page-heading {
   min-width: 0;
@@ -181,16 +181,16 @@ p + p {
 .avatar-mark {
   display: inline-grid;
   place-items: center;
-  width: 112px;
-  height: 112px;
+  width: 160px;
+  height: 160px;
   margin-bottom: 28px;
   background: var(--accent-soft);
   border-radius: 999px;
 }
 
 .avatar-mark svg {
-  width: 78px;
-  height: 78px;
+  width: 112px;
+  height: 112px;
   fill: none;
   stroke: var(--accent);
   stroke-linecap: round;
@@ -223,7 +223,7 @@ dd {
   color: #30424d;
 }
 
-.home-lists {
+.cv-summary {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 72px;
@@ -337,7 +337,7 @@ dd {
   }
 
   .profile-intro,
-  .home-lists {
+  .cv-summary {
     grid-template-columns: 1fr;
     gap: 42px;
   }
@@ -351,17 +351,17 @@ dd {
   }
 
   .avatar-mark {
-    width: 92px;
-    height: 92px;
+    width: 120px;
+    height: 120px;
     margin-bottom: 22px;
   }
 
   .avatar-mark svg {
-    width: 64px;
-    height: 64px;
+    width: 86px;
+    height: 86px;
   }
 
-  .home-lists {
+  .cv-summary {
     padding-top: 44px;
   }
 
