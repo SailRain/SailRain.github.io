@@ -6,156 +6,99 @@
     <title>Zhang San | Academic Homepage</title>
     <meta
       name="description"
-      content="A minimalist academic homepage placeholder for design review."
+      content="A sparse academic homepage placeholder for design review."
     >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="Homepage">Zhang San</a>
+      <a class="wordmark" href="index.html">Zhang San</a>
       <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#work">Work</a>
-        <a href="#notes">Notes</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="notes.html">Notes</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">Sample profile for design review</p>
-          <h1 id="hero-title">Zhang San <span>(Chinese: 张三)</span></h1>
-          <p class="lead">
-            Doctoral researcher studying human-centered computation, digital
-            governance, and trustworthy information systems.
+    <main>
+      <section class="profile-intro" aria-labelledby="profile-title">
+        <div class="profile-copy">
+          <p class="eyebrow">Academic profile placeholder</p>
+          <h1 id="profile-title">Zhang San <span>(Chinese: 张三)</span></h1>
+          <p class="role">
+            Doctoral researcher in human-centered computation and digital
+            governance.
           </p>
           <p class="affiliation">
             Department of Computer Science, Moumou University (某某大学)
           </p>
-          <div class="hero-actions" aria-label="Profile links">
-            <a class="button primary" href="#work">Selected Work</a>
-            <a class="button secondary" href="#contact">Contact</a>
-          </div>
+          <p>
+            This sample homepage is a quiet placeholder for reviewing academic
+            layout, typography, and navigation. The final version can introduce
+            research interests, publications, teaching, and selected notes
+            without turning the homepage into a full portfolio page.
+          </p>
         </div>
 
-        <figure class="profile-visual" aria-label="Abstract academic workspace">
-          <div class="portrait-mark" aria-hidden="true">
-            <svg viewBox="0 0 260 260" role="img">
-              <title>Abstract academic portrait placeholder</title>
-              <rect x="20" y="24" width="220" height="212" rx="8"></rect>
-              <path d="M48 196h164"></path>
-              <path d="M66 166h126"></path>
-              <circle cx="130" cy="92" r="34"></circle>
-              <path d="M78 172c9-32 31-48 52-48s43 16 52 48"></path>
-              <path d="M70 52h42"></path>
-              <path d="M70 68h28"></path>
-              <path d="M162 52h28"></path>
-              <path d="M162 68h44"></path>
+        <aside class="profile-meta" aria-label="Profile summary">
+          <div class="avatar-mark" aria-hidden="true">
+            <svg viewBox="0 0 96 96" role="img">
+              <title>Profile placeholder</title>
+              <circle cx="48" cy="30" r="16"></circle>
+              <path d="M22 78c5-22 18-34 26-34s21 12 26 34"></path>
+              <path d="M26 78h44"></path>
             </svg>
           </div>
-          <figcaption>
-            Research notes, working papers, and project materials will be added
-            after the visual direction is approved.
-          </figcaption>
-        </figure>
+          <dl>
+            <div>
+              <dt>Role</dt>
+              <dd>Doctoral researcher</dd>
+            </div>
+            <div>
+              <dt>Institution</dt>
+              <dd>Moumou University (某某大学)</dd>
+            </div>
+            <div>
+              <dt>Interests</dt>
+              <dd>Human-centered AI, digital governance, platform studies</dd>
+            </div>
+          </dl>
+        </aside>
       </section>
 
-      <section id="about" class="section two-column" aria-labelledby="about-title">
+      <section class="home-lists" aria-label="Homepage highlights">
         <div>
-          <p class="section-kicker">About</p>
-          <h2 id="about-title">A concise academic profile.</h2>
+          <h2>Recent News</h2>
+          <ol class="plain-list">
+            <li>
+              <time datetime="2026-06">June 2026</time>
+              <span>Homepage structure and visual style are under review.</span>
+            </li>
+            <li>
+              <time datetime="2026-05">May 2026</time>
+              <span>Sample research summary prepared for placeholder content.</span>
+            </li>
+          </ol>
         </div>
-        <div class="section-body">
-          <p>
-            Zhang San is a sample researcher profile used to evaluate the layout,
-            typography, and information structure of this homepage. The final
-            version can include education, appointments, research groups, and
-            selected professional activities.
-          </p>
-          <p>
-            The design prioritizes legibility, calm spacing, and direct access to
-            publications, projects, notes, and contact information.
-          </p>
-        </div>
-      </section>
 
-      <section id="research" class="section" aria-labelledby="research-title">
-        <div class="section-heading">
-          <p class="section-kicker">Research Interests</p>
-          <h2 id="research-title">Focused areas for future content.</h2>
-        </div>
-        <div class="tag-grid">
-          <span>Human-centered AI</span>
-          <span>Computational social systems</span>
-          <span>Digital governance</span>
-          <span>Trustworthy platforms</span>
-        </div>
-      </section>
-
-      <section id="work" class="section" aria-labelledby="work-title">
-        <div class="section-heading">
-          <p class="section-kicker">Selected Work</p>
-          <h2 id="work-title">Representative papers and projects.</h2>
-        </div>
-        <div class="work-list">
-          <article class="work-item">
-            <p class="meta">Working paper · 2026</p>
-            <h3>Placeholder Title on Transparent Digital Institutions</h3>
-            <p>
-              A short abstract-style description will summarize the central
-              question, method, and contribution.
-            </p>
-          </article>
-          <article class="work-item">
-            <p class="meta">Project · 2025</p>
-            <h3>Sample Platform Study for Civic Information Systems</h3>
-            <p>
-              This entry can link to a repository, dataset, preprint, or demo
-              once real project material is available.
-            </p>
-          </article>
-          <article class="work-item">
-            <p class="meta">Conference note · 2024</p>
-            <h3>Research Notes on Responsible Automation</h3>
-            <p>
-              A compact publication card for early-stage notes, posters, or
-              workshop submissions.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="notes" class="section two-column" aria-labelledby="notes-title">
         <div>
-          <p class="section-kicker">Notes</p>
-          <h2 id="notes-title">Recent writing placeholders.</h2>
-        </div>
-        <div class="note-list">
-          <a href="#" aria-label="Read note: Designing research logs">
-            <span>Designing research logs for long-term projects</span>
-            <time datetime="2026-06">June 2026</time>
-          </a>
-          <a href="#" aria-label="Read note: Reading group template">
-            <span>A lightweight template for reading group summaries</span>
-            <time datetime="2026-05">May 2026</time>
-          </a>
-          <a href="#" aria-label="Read note: Methods checklist">
-            <span>Methods checklist for reproducible qualitative coding</span>
-            <time datetime="2026-04">April 2026</time>
-          </a>
-        </div>
-      </section>
-
-      <section id="contact" class="section contact" aria-labelledby="contact-title">
-        <p class="section-kicker">Contact</p>
-        <h2 id="contact-title">Open to academic discussion and collaboration.</h2>
-        <div class="contact-links">
-          <a href="mailto:sample@example.edu">sample@example.edu</a>
-          <a href="https://github.com/SailRain">GitHub</a>
-          <a href="#">Google Scholar</a>
-          <a href="#">ORCID</a>
+          <h2>Selected Publications</h2>
+          <ol class="plain-list publication-list">
+            <li>
+              <span class="pub-title">Placeholder Title on Transparent Digital Institutions</span>
+              <span class="pub-detail">Working paper, 2026.</span>
+            </li>
+            <li>
+              <span class="pub-title">Sample Platform Study for Civic Information Systems</span>
+              <span class="pub-detail">Project manuscript, 2025.</span>
+            </li>
+          </ol>
+          <p class="more-link">
+            <a href="publications.html">View all publications</a>
+          </p>
         </div>
       </section>
     </main>
