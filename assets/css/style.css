@@ -1,3 +1,5 @@
+/* Original stylesheet code: MIT. Copyright (c) 2026 Pierson Bian.
+   Full license: /licenses/MIT.txt. Scope and excluded assets: /license/. */
 :root {
   color-scheme: light;
   --text: #435064;
@@ -81,8 +83,14 @@ h1, h2, h3 { color: var(--heading); line-height: 1.35; }
 .empty-state-icon { color: #8190a1; display: block; margin: 0 auto 16px; }
 .empty-state h2 { font-size: 18px; border: 0; padding: 0; margin: 0 0 8px; }
 .empty-state p { color: var(--muted); margin: 0; font-size: 15px; }
-.site-footer { width: min(var(--content-width), calc(100% - 48px)); margin: 64px auto 0; padding: 20px 0 28px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+.site-footer { width: min(var(--content-width), calc(100% - 48px)); margin: 64px auto 0; padding: 20px 0 28px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
 .site-footer p { margin: 0; }
+.footer-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; }
+.footer-copyright { font-weight: 650; white-space: nowrap; }
+.footer-license { display: inline-flex; align-items: baseline; gap: 5px; white-space: nowrap; }
+.footer-separator { margin-right: 7px; }
+.site-footer a { color: var(--muted); font-weight: 500; }
+.site-footer a:hover { color: var(--link); }
 
 @media (max-width: 600px) {
   .header-inner { min-height: 66px; padding: 0 24px; gap: 12px; }
@@ -99,6 +107,7 @@ h1, h2, h3 { color: var(--heading); line-height: 1.35; }
   .page-heading h1 { font-size: 27px; }
   .empty-state { padding: 36px 20px; }
   .site-footer { margin-top: 48px; }
+  .footer-separator { display: none; }
 }
 
 @media (max-width: 380px) {
