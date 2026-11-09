@@ -40,8 +40,9 @@ a:focus-visible { outline: 2px solid var(--link); outline-offset: 5px; border-ra
   justify-content: space-between;
   gap: 24px;
 }
-.site-name { color: var(--heading); font-size: 16px; font-weight: 650; letter-spacing: -.2px; }
+.site-name { display: inline-flex; align-items: center; gap: 8px; color: var(--heading); font-size: 16px; font-weight: 650; letter-spacing: -.2px; white-space: nowrap; }
 .site-name:hover { text-decoration: none; color: var(--link); }
+.site-logo { display: block; width: 24px; height: 24px; object-fit: contain; flex-shrink: 0; }
 .site-nav { display: flex; align-items: center; gap: 28px; }
 .site-nav a { position: relative; padding: 26px 0 23px; color: var(--muted); font-size: 14px; }
 .site-nav a:hover { color: var(--link); text-decoration: none; }
@@ -57,7 +58,7 @@ a:focus-visible { outline: 2px solid var(--link); outline-offset: 5px; border-ra
 }
 .site-main { width: min(var(--content-width), calc(100% - 48px)); margin: 0 auto; padding-top: 58px; }
 .profile { display: flex; align-items: center; gap: 30px; margin-bottom: 36px; }
-.profile-logo { display: block; width: 112px; height: 115px; object-fit: contain; flex-shrink: 0; }
+.profile-portrait { display: block; width: 112px; height: auto; flex-shrink: 0; }
 .profile-details { min-width: 0; }
 h1, h2, h3 { color: var(--heading); line-height: 1.35; }
 .profile-heading { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin-bottom: 10px; }
@@ -97,13 +98,14 @@ h1, h2, h3 { color: var(--heading); line-height: 1.35; }
 
 @media (max-width: 600px) {
   .header-inner { min-height: 66px; padding: 0 24px; gap: 12px; }
-  .site-name { font-size: 15px; }
+  .site-name { gap: 6px; font-size: 15px; }
+  .site-logo { width: 20px; height: 20px; }
   .site-nav { gap: 20px; }
   .site-nav a { font-size: 13px; padding: 22px 0 19px; }
   .site-nav a[aria-current="page"]::after { bottom: 13px; }
   .site-main { padding-top: 36px; }
   .profile { gap: 20px; align-items: flex-start; margin-bottom: 30px; }
-  .profile-logo { width: 84px; height: 86px; margin-top: 3px; }
+  .profile-portrait { width: 84px; margin-top: 3px; }
   .profile-heading { margin-bottom: 8px; }
   .profile h1 { font-size: 24px; letter-spacing: -.5px; }
   .profile p { font-size: 14px; line-height: 1.6; }
@@ -119,7 +121,7 @@ h1, h2, h3 { color: var(--heading); line-height: 1.35; }
   .site-nav { gap: 14px; }
   .site-main, .site-footer { width: calc(100% - 40px); }
   .profile { gap: 16px; }
-  .profile-logo { width: 64px; height: 66px; }
+  .profile-portrait { width: 64px; }
   .profile h1 { font-size: 22px; }
 }
 
