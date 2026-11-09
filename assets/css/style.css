@@ -60,11 +60,13 @@ a:focus-visible { outline: 2px solid var(--link); outline-offset: 5px; border-ra
 .profile-logo { display: block; width: 112px; height: 115px; object-fit: contain; flex-shrink: 0; }
 .profile-details { min-width: 0; }
 h1, h2, h3 { color: var(--heading); line-height: 1.35; }
-.profile h1 { font-size: 30px; letter-spacing: -.7px; font-weight: 650; margin: 0 0 10px; text-wrap: balance; }
+.profile-heading { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin-bottom: 10px; }
+.profile h1 { font-size: 30px; letter-spacing: -.7px; font-weight: 650; margin: 0; white-space: nowrap; }
 .profile p { margin: 2px 0; font-size: 15px; }
 .profile-role { color: var(--text); }
 .profile-alias, .profile-location { color: var(--muted); }
-.profile-alias span { color: var(--text); }
+.profile-alias { font-size: 14px; font-weight: 400; letter-spacing: normal; white-space: nowrap; }
+.profile-email { overflow-wrap: anywhere; }
 .profile-links { display: flex; flex-wrap: wrap; gap: 4px 18px; list-style: none; margin: 9px 0 0; padding: 0; font-size: 14px; }
 .profile-links li { margin: 0; }
 .prose { line-height: 1.65; }
@@ -102,7 +104,8 @@ h1, h2, h3 { color: var(--heading); line-height: 1.35; }
   .site-main { padding-top: 36px; }
   .profile { gap: 20px; align-items: flex-start; margin-bottom: 30px; }
   .profile-logo { width: 84px; height: 86px; margin-top: 3px; }
-  .profile h1 { font-size: 24px; letter-spacing: -.5px; margin-bottom: 8px; }
+  .profile-heading { margin-bottom: 8px; }
+  .profile h1 { font-size: 24px; letter-spacing: -.5px; }
   .profile p { font-size: 14px; line-height: 1.6; }
   .prose h2 { font-size: 20px; margin-top: 26px; }
   .page-heading h1 { font-size: 27px; }
